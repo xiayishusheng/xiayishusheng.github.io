@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>须臾幻境</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="爱我所爱，无怨无悔！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="须臾幻境">
+<meta property="og:url" content="http://xiayishusheng.gitee.io/page/2/index.html">
+<meta property="og:site_name" content="须臾幻境">
+<meta property="og:description" content="爱我所爱，无怨无悔！">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="侠义书生">
+<meta property="article:tag" content="侠义书生 xiayishusheng 奇异果 博客">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">须臾幻境</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://xiayishusheng.gitee.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Ubuntu" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/09/22/Ubuntu/" class="article-date">
+  <time datetime="2017-09-22T09:50:11.000Z" itemprop="datePublished">2017-09-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/22/Ubuntu/">Ubuntu</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Ubuntu设置不睡眠"><a href="#Ubuntu设置不睡眠" class="headerlink" title="Ubuntu设置不睡眠"></a>Ubuntu设置不睡眠</h2><p><strong>16.04以下的旧版本</strong><br>打开 System Settings –&gt; Power（中文版是打开 系统设置 -&gt; 电源），选择不挂起</p>
+<p><strong>18.04版本</strong><br>编辑 Login Manager 的配置文件（logind.conf）<br><code>sudo vim /etc/systemd/logind.conf</code><br>打开文件后修改下面这行：<br><code>#HandleLidSwitch=suspend</code><br>改成这样：<br><code>HandleLidSwitch=ignore</code><br>保存文件，重启 Login Manager 服务：<br><code>sudo service systemd-logind restart</code><br>or<br><code>systemctl restart systemd-logind</code></p>
+<p>选项值的意义：</p>
+<ul>
+<li>ignore(无操作，不过合上笔记本屏幕会熄灭)</li>
+<li>supend(休眠到内存)</li>
+<li>hibernate(休眠到硬盘)</li>
+<li>poweroff(关闭系统并切断电源)</li>
+<li>halt(关闭系统但不切断电源)</li>
+<li>hybrid-sleep(同时休眠到内存和硬盘)</li>
+<li>lock(锁屏)</li>
+</ul>
+        
+          <p class="article-more-link">
+            <a href="/2017/09/22/Ubuntu/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xiayishusheng.gitee.io/2017/09/22/Ubuntu/" data-id="ckindkm5800027sd9hx8pbv6g" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-为什么程序员下班后不关电脑" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/09/05/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%8B%E7%8F%AD%E5%90%8E%E4%B8%8D%E5%85%B3%E7%94%B5%E8%84%91/" class="article-date">
+  <time datetime="2017-09-05T10:45:24.000Z" itemprop="datePublished">2017-09-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/05/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%8B%E7%8F%AD%E5%90%8E%E4%B8%8D%E5%85%B3%E7%94%B5%E8%84%91/">为什么程序员下班后总是不关电脑？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><strong>为什么程序员下班后总是不关电脑，昨晚我好心把所有没关的电脑都关了,今早有位程序员竟然向我发飙，还说要打我，我彻底无语了做了好事还挨骂，很委屈大家来评评理吧。</strong></li>
+<li><strong>有些人是开着teamviewer防止下班后突然加班，这样不用回公司了，在家里连到公司电脑就行了。</strong></li>
+</ul>
+        
+          <p class="article-more-link">
+            <a href="/2017/09/05/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%8B%E7%8F%AD%E5%90%8E%E4%B8%8D%E5%85%B3%E7%94%B5%E8%84%91/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xiayishusheng.gitee.io/2017/09/05/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%8B%E7%8F%AD%E5%90%8E%E4%B8%8D%E5%85%B3%E7%94%B5%E8%84%91/" data-id="ckindkm5f000b7sd9ed46fyms" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B9%BD%E9%BB%98/" rel="tag">幽默</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-绕口令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/05/01/%E7%BB%95%E5%8F%A3%E4%BB%A4/" class="article-date">
+  <time datetime="2017-05-01T01:00:09.000Z" itemprop="datePublished">2017-05-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/05/01/%E7%BB%95%E5%8F%A3%E4%BB%A4/">绕口令 —— 舌头是怎样练成的</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>第 1 题<br>黑化肥发灰会挥发；灰化肥挥发会发黑</p>
+</li>
+<li><p>第 2 题<br>红凤凰，黄凤凰，粉红凤凰花凤凰</p>
+</li>
+</ul>
+        
+          <p class="article-more-link">
+            <a href="/2017/05/01/%E7%BB%95%E5%8F%A3%E4%BB%A4/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xiayishusheng.gitee.io/2017/05/01/%E7%BB%95%E5%8F%A3%E4%BB%A4/" data-id="ckindkm61001j7sd9826q5cvn" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-建宇&amp;晓曦" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/02/%E5%BB%BA%E5%AE%87&%E6%99%93%E6%9B%A6/" class="article-date">
+  <time datetime="2016-11-02T11:14:16.000Z" itemprop="datePublished">2016-11-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%BD%B1%E8%A7%86/">影视</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/02/%E5%BB%BA%E5%AE%87&%E6%99%93%E6%9B%A6/">建宇&amp;晓曦</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p></p>
+<video controls="" preload="none" width="640" height="480" poster="http://video.xiayishusheng.com/IMG_1158.jpg">
+    <source src="http://video.xiayishusheng.com/IMG_1158.mp4" type="video/mp4">
+    <p>Your user agent does not support the HTML5 Video element.</p>
+    <p>您的浏览器不支持 HTML5 video 标签。</p>
+</video>  
+
+<p></p>
+
+<video controls="" preload="none" width="640" height="480" poster="http://video.xiayishusheng.com/IMG_1159.jpg">
+    <source src="http://video.xiayishusheng.com/IMG_1159.mp4" type="video/mp4">
+    <p>Your user agent does not support the HTML5 Video element.</p>
+    <p>您的浏览器不支持 HTML5 video 标签。</p>
+</video>
+
+<p></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xiayishusheng.gitee.io/2016/11/02/%E5%BB%BA%E5%AE%87&%E6%99%93%E6%9B%A6/" data-id="ckindkm5l000k7sd9aklq1tcv" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BD%B1%E8%A7%86/" rel="tag">影视</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-android" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/03/android/" class="article-date">
+  <time datetime="2016-08-03T12:06:32.000Z" itemprop="datePublished">2016-08-03</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%9B%B8%E5%85%B3/">编程相关</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/03/android/">android</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Gradle修改仓库的位置"><a href="#Gradle修改仓库的位置" class="headerlink" title="Gradle修改仓库的位置"></a>Gradle修改仓库的位置</h3><p>方法1：设置系统环境变量GRADLE_USER_HOME<br><img src="http://qiniu.xiayishusheng.com/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8FGRADLE_USER_HOME.png" alt="GRADLE_USER_HOME"></p>
+<p>方法2：按快捷键Ctrl + Alt + S打开Setting，设置gradle路径<br><img src="http://qiniu.xiayishusheng.com/AndroidStudio%20Gradle%E7%9B%AE%E5%BD%95%E8%AE%BE%E7%BD%AE.png"></p>
+        
+          <p class="article-more-link">
+            <a href="/2016/08/03/android/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xiayishusheng.gitee.io/2016/08/03/android/" data-id="ckindkm5900037sd92k2pdfq1" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/" rel="tag">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BC%80%E5%8F%91/" rel="tag">开发</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-每天找到新发现" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/01/01/%E6%AF%8F%E5%A4%A9%E6%89%BE%E5%88%B0%E6%96%B0%E5%8F%91%E7%8E%B0/" class="article-date">
+  <time datetime="2015-12-31T16:00:00.000Z" itemprop="datePublished">2016-01-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/01/01/%E6%AF%8F%E5%A4%A9%E6%89%BE%E5%88%B0%E6%96%B0%E5%8F%91%E7%8E%B0/">每天找到新发现</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="点滴记录"><a href="#点滴记录" class="headerlink" title="点滴记录"></a>点滴记录</h4><ul>
+<li>2015-06-19 23:33:32 学会 android 中 sax 和 pull 解析器，用来解析 xml。睡觉！！</li>
+<li>2015-07-11 最近一个星期初步掌握 Java 设计模式之工厂模式、抽象工厂模式、适配器模式、外观模式。</li>
+<li>2017-04-13 Android Live WallPaper</li>
+<li>2017-07-01 编译 CyanogenMod 12.1 for cancro</li>
+<li>2017-09-27 chromium 编译</li>
+<li>2017-10-11 <a target="_blank" rel="noopener" href="https://yunqi.aliyun.com/">阿里云云栖大会</a>，<a target="_blank" rel="noopener" href="https://yq.aliyun.com/topic/96">2017 云栖大会·上海峰会</a></li>
+</ul>
+<video controls="" preload="none" width="848" height="476" poster="https://img.alicdn.com/tfs/TB1X3AsRFXXXXbzXFXXXXXXXXXX-1533-860.jpg">
+<source src="https://cloud.video.taobao.com/play/u/2738073042/p/1/e/6/t/1/57019295.mp4" type="video/mp4">
+<p>Your user agent does not support the HTML5 Video element.</p></video>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://yunqi.youku.com/?spm=a2c4e.11165380.1395221.2">2019 云栖大会·杭州</a></li>
+</ul>
+<video controls="" preload="none" width="848" height="476" poster="https://img.alicdn.com/tfs/TB1r0Aug.T1gK0jSZFhXXaAtVXa-1920-1080.jpg">
+<source src="https://yunqivedio.alicdn.com/2019yq/2019HZmainforum.mp4" type="video/mp4">
+</video>
+
+<h3 id="2019-12-01"><a href="#2019-12-01" class="headerlink" title="2019-12-01"></a>2019-12-01</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">接到一个提取 com.huuuge.casino.texas-v4.9.1650 资源的任务，想到用 frida 进行研究。Android 7.1 之前的版本用 frida hook dlopen 可以获取 app 加载 so 的名称，但是在 Android 8.1 之后此方法失效，探后对比 Android 6.0 和 Android 8.1 System.loadLibrary()代码发现 hook_ZN7android17OpenNativeLibraryEP7_JNIEnviPKcP8_jobjectP8_jstringPbPNSt3__112basic_stringIcNS9_11char_traitsIcEENS9_9allocatorIcEEEE 可以达到目的。（半夜一两点搞通的，然后睡觉）</span><br></pre></td></tr></table></figure>
+
+<h3 id="2019-01-02"><a href="#2019-01-02" class="headerlink" title="2019-01-02"></a>2019-01-02</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">看天天向上12-22期，听到一首歌，我从来不想独身，却有预感晚婚</span><br></pre></td></tr></table></figure>
+
+<h3 id="2020-01-03-时间的朋友"><a href="#2020-01-03-时间的朋友" class="headerlink" title="2020-01-03 时间的朋友"></a>2020-01-03 时间的朋友</h3><ul>
+<li>关于演讲中插播泸州老窖的广告，纯粹的东西会有，但是在这个时代，也是需要做一些变通的。</li>
+<li>真可怜，现场的观众不能快进播放。 哈哈</li>
+<li>因为人工智能对很多工作岗位的替代，导致整个社会的收入结构正在出现一次沧桑巨变</li>
+<li>创造未来最好的方法，就是把它创造出来</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xiayishusheng.gitee.io/2016/01/01/%E6%AF%8F%E5%A4%A9%E6%89%BE%E5%88%B0%E6%96%B0%E5%8F%91%E7%8E%B0/" data-id="ckindkm5q000w7sd94yu8awg4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-google-source-bug-fix" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/08/13/google-source-bug-fix/" class="article-date">
+  <time datetime="2015-08-13T02:36:28.000Z" itemprop="datePublished">2015-08-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%9B%B8%E5%85%B3/">编程相关</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/13/google-source-bug-fix/">google source bug fix</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>In project cts: <a target="_blank" rel="noopener" href="https://android-review.googlesource.com/#/c/116417">https://android-review.googlesource.com/#/c/116417</a></li>
+<li>In project frameworks/native: <a target="_blank" rel="noopener" href="https://android-review.googlesource.com/#/c/116418">https://android-review.googlesource.com/#/c/116418</a></li>
+<li>In project frameworks/base: <a target="_blank" rel="noopener" href="https://android-review.googlesource.com/#/c/116610">https://android-review.googlesource.com/#/c/116610</a></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xiayishusheng.gitee.io/2015/08/13/google-source-bug-fix/" data-id="ckindkm5d00077sd9bfa9czdy" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-来干了这碗鸡汤" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/08/13/%E6%9D%A5%E5%B9%B2%E4%BA%86%E8%BF%99%E7%A2%97%E9%B8%A1%E6%B1%A4/" class="article-date">
+  <time datetime="2015-08-13T01:34:48.000Z" itemprop="datePublished">2015-08-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/13/%E6%9D%A5%E5%B9%B2%E4%BA%86%E8%BF%99%E7%A2%97%E9%B8%A1%E6%B1%A4/">来干了这碗鸡汤</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p>一张百元大钞和一张白纸，把它们分别揉成一团后展开，扔在地上用脚踩。无论遭受怎样的蹂躏，钞票的价值没有减少，但白纸却成为废纸。 “只要有价值，你遇到困难，遭受挫折，被人唾骂，被踩在脚下都不可怕，最可怕的是，你是张白纸”。所以，世界上只有一个人阻碍你的成长——你自己。 少埋怨、多理解、动手做，就有结果！ ——送给身边正在坚持梦想的人！</p>
+</li>
+<li><p>一个真正优秀的男人，一定要有扬在脸上的自信，长在心底的善良，融进血液里的骨气，刻进生命里的坚强，深入灵魂处的血性及释放真我的激荡。</p>
+</li>
+<li><p>一位40多岁的千万富翁在原配去世后，娶了一个20多岁的大学生，每月给10万元的零花钱，这个女孩认识了一位保险公司的客户经理，就买了100多万的人寿保险。<br>在他一场投资失利后，全部资产用来抵债，回家后，垂头丧气的告诉媳妇，“我破产了，无力养你了，连你的车都被抵债了，你另找人嫁了吧！”媳妇说：你还爱我吗？<br>他说“我已经没有资格爱你了”她说“我在保险公司买了100多万的保险，听说不可冻结，不可抵债，急用时可以贷款，我们可以用这笔钱东山再起，明天我们就去办。”<br>随后他就用保单贷款的将近100万元在短短几年后变成了5000万。这位成功人士讲起这段经历时就会说“我有一个傻媳妇！ 我本来有两筐鸡蛋，我的傻媳妇每天偷偷拿出两个放到别的地方，<br>突然有一天，我的两筐鸡蛋都打碎了，她拿出了每天偷偷攒下的鸡蛋帮我又赚回了原来的两筐鸡蛋！ 亲！你是这样的“傻”媳妇吗？帅哥你希望拥有这样的“傻媳妇”吗？<br>看看下面这个故事。</p>
+</li>
+</ol>
+        
+          <p class="article-more-link">
+            <a href="/2015/08/13/%E6%9D%A5%E5%B9%B2%E4%BA%86%E8%BF%99%E7%A2%97%E9%B8%A1%E6%B1%A4/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xiayishusheng.gitee.io/2015/08/13/%E6%9D%A5%E5%B9%B2%E4%BA%86%E8%BF%99%E7%A2%97%E9%B8%A1%E6%B1%A4/" data-id="ckindkm5r00117sd900noa9zr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%98%85%E8%AF%BB/" rel="tag">阅读</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&amp;laquo; 上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BD%B1%E8%A7%86/">影视</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%9B%B8%E5%85%B3/">编程相关</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%97%E8%AF%8D/">诗词</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/" rel="tag">Android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B9%BD%E9%BB%98/" rel="tag">幽默</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91/" rel="tag">开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BD%B1%E8%A7%86/" rel="tag">影视</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%97%E8%AF%8D/" rel="tag">诗词</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%98%85%E8%AF%BB/" rel="tag">阅读</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/09/09/%E5%88%9D%E6%81%8B%E8%BF%99%E4%BB%B6%E5%B0%8F%E4%BA%8B/">初恋这件小事</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/11/%E6%95%99%E7%A8%8B%E7%9B%B8%E5%85%B3/">教程相关</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/30/%E4%B8%96%E7%95%8C%E6%98%AF%E4%BD%A0%E4%BB%AC%E7%9A%84%EF%BC%8C%E4%B9%9F%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%EF%BC%8C%E4%BD%86%E7%BB%88%E7%A9%B6%E6%98%AF%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84/">世界是你们的，也是我们的，但终究是程序员的</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/01/%E6%95%B0%E5%AD%A6%E5%8F%B2%E4%B8%8A%E6%9C%80%E7%BE%8E%E7%9A%84%E5%85%AC%E5%BC%8F/">数学史上最美的公式</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/02/%E6%9B%BE%E5%9B%BD%E8%97%A9%E5%85%AD%E5%8F%A5%E7%AE%B4%E8%A8%80/">曾国藩六句箴言</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 侠义书生<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
